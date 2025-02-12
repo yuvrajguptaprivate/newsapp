@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/layout_background"
+    android:layout_height="match_parent"
+    tools:context=".NewsFragment">
+
+
+    <SearchView
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/list_background" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:id="@+id/myrecyclerinnewsfrag"
+        android:layout_height="match_parent"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/myprogressbarinnewsfrag"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
